@@ -10,3 +10,32 @@ html,
 body {
 	background-color: white;
 }
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+	.hero__container {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.hero__details {
+		margin-top: 10px;
+		text-align: center;
+	}
+	.hero .hero__container .hero__details > div {
+		justify-content: center;
+	}
+
+	.hero__perfil--image-container {
+		width: 30vh;
+		height: auto;
+	}
+}
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 320px) {
+}
