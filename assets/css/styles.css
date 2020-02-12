@@ -1,51 +1,63 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700&display=swap');
 
 * {
-	margin: 0px;
-	padding: 0px;
-	font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html,
 body {
-	background-color: white;
+  background-color: white;
 }
 
 @media screen and (max-width: 1024px) {
 }
 
 @media screen and (max-width: 768px) {
-	.header__container {
-		width: 100%;
-	}
+  .header {
+    height: auto;
+  }
+  .header__container {
+    width: 100%;
+    display: block;
+  }
 
-	.header .header__perfil {
-		display: none;
-	}
+  .header .header__perfil {
+    display: none;
+  }
 
-	.hero__container {
-		display: flex;
-		flex-direction: column-reverse;
-		align-items: center;
-	}
+  .header .header__nav ul {
+    display: block;
+  }
 
-	.hero__details {
-		margin-top: 10px;
-		text-align: center;
-	}
-	.hero .hero__container .hero__details > div {
-		justify-content: center;
-	}
+  .header .header__nav ul li {
+    height: 50px;
+  }
 
-	.hero__perfil--image-container {
-		width: 30vh;
-		height: auto;
-	}
+  .hero__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-	.main__projects {
-		width: 100%;
-		grid-template-columns: auto auto auto;
-	}
+  .hero__details {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .hero .hero__container .hero__details > div {
+    justify-content: center;
+  }
+
+  .hero__perfil--image-container {
+    width: 30vh;
+    height: auto;
+  }
+
+  .main__projects {
+    width: 100%;
+    grid-template-columns: auto auto auto;
+  }
 }
 @media screen and (max-width: 480px) {
 }
