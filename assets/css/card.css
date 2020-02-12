@@ -1,19 +1,18 @@
 .main__projects {
-	width: fit-content;
+	width: 80%;
 	padding: 10px;
 	margin: 0 auto;
-	display: flex;
-	justify-content: flex-start;
-	flex-wrap: wrap;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: auto auto auto auto;
+	box-sizing: border-box;
 }
 
 .projects__card {
-	width: 250px;
-	height: 250px;
-	margin-right: 10px;
+	width: 100%;
 	padding: 10px;
 	display: grid;
-	grid-row: 1fr 2fr;
+	grid-template-rows: 3fr 1fr;
 	border: 1px solid rgba(128, 128, 128, 0.096);
 	border-radius: 5px;
 	box-shadow: 0px 3px 6px rgba(128, 128, 128, 0.096);
@@ -22,7 +21,7 @@
 
 .projects__card--imageContainer {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	margin: 0;
 }
 .projects__card--imageContainer img {
@@ -39,7 +38,11 @@
 
 .projects__card--details h2 {
 	margin: 0;
-	font-size: 18px;
+	font-size: 1.5vmax;
+}
+
+.projects__card--details small {
+	font-size: 12px;
 }
 
 .projects__card--details > div {

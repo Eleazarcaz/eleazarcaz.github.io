@@ -15,6 +15,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+	.header__container {
+		width: 100%;
+	}
+
+	.header .header__perfil {
+		display: none;
+	}
+
 	.hero__container {
 		display: flex;
 		flex-direction: column-reverse;
@@ -32,6 +40,11 @@ body {
 	.hero__perfil--image-container {
 		width: 30vh;
 		height: auto;
+	}
+
+	.main__projects {
+		width: 100%;
+		grid-template-columns: auto auto auto;
 	}
 }
 @media screen and (max-width: 480px) {
