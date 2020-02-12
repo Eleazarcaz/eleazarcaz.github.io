@@ -12,12 +12,16 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  .main__projects {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .header {
     height: auto;
   }
+
   .header__container {
     width: 100%;
     display: block;
@@ -56,11 +60,53 @@ body {
 
   .main__projects {
     width: 100%;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
   }
 }
 @media screen and (max-width: 480px) {
+  .main__projects {
+    width: 100%;
+    grid-template-columns: auto;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .footer__container {
+    width: auto;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .footer__release {
+    height: 20px;
+    margin-top: 10px;
+  }
+
+  .footer__social-network {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__social-network a {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .footer__social-network img {
+    height: inherit;
+  }
 }
 
 @media screen and (max-width: 320px) {
+  .hero .hero__perfil {
+    display: none;
+  }
 }

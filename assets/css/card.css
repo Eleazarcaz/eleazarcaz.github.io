@@ -1,63 +1,62 @@
 .main__projects {
-	width: 80%;
-	padding: 10px;
-	margin: 0 auto;
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: auto auto auto auto;
-	box-sizing: border-box;
+  width: 80%;
+  padding: 10px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto auto;
+  box-sizing: border-box;
 }
 
 .projects__card {
-	width: 100%;
-	padding: 10px;
-	display: grid;
-	grid-template-rows: 3fr 1fr;
-	border: 1px solid rgba(128, 128, 128, 0.096);
-	border-radius: 5px;
-	box-shadow: 0px 3px 6px rgba(128, 128, 128, 0.096);
-	box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  border: 1px solid rgba(128, 128, 128, 0.096);
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(128, 128, 128, 0.096);
+  box-sizing: border-box;
 }
 
 .projects__card--imageContainer {
-	width: 100%;
-	height: 100%;
-	margin: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 .projects__card--imageContainer img {
-	width: inherit;
-	height: inherit;
-	object-fit: cover;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
 }
 
 .projects__card--details {
-	display: grid;
-	grid-template-rows: none;
-	grid-template-columns: 2fr 1fr;
+  display: grid;
+  grid-template-rows: none;
+  grid-template-columns: 2fr 1fr;
 }
 
 .projects__card--details h2 {
-	margin: 0;
-	font-size: 1.5vmax;
+  margin: 0;
+  font-size: larger;
 }
 
-.projects__card--details small {
+/* .projects__card--details small {
 	font-size: 12px;
-}
+} */
 
 .projects__card--details > div {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: #2b4162;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2b4162;
 }
 .projects__card--details .card-details__btns--resume span {
-	font-size: 30px;
-	padding: 5px 15px;
-	background-color: #9be564;
-	border: 1px solid rgba(128, 128, 128, 0.096);
-	border-radius: 5px;
-	box-sizing: border-box;
-	cursor: pointer;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #dd1021;
 }

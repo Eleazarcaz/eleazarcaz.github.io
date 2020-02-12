@@ -1,86 +1,87 @@
 .hero {
-	width: 100%;
-	height: 85vh;
-	margin: 0;
-	background-color: #f1f0ee;
+  width: 100%;
+  height: 85vh;
+  margin: 0;
+  background-color: #f1f0ee;
 }
 
 .hero__container {
-	width: 80%;
-	height: inherit;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	justify-content: center;
+  width: 80%;
+  height: inherit;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
 }
 
 /* ------------------------------------------------- .hero__details <- */
 .hero .hero__details h1 {
-	padding: 0;
-	font-size: 40px;
-	color: #2b4162;
-	margin-bottom: 10px;
+  padding: 0;
+  font-size: 40px;
+  color: #2b4162;
+  margin-bottom: 10px;
 }
 
 .hero .hero__details p {
-	font-weight: 500;
-	color: #6a696b;
+  font-weight: 500;
+  color: #6a696b;
 }
 
 .hero .hero__details .details__social-network {
-	margin-top: 20px;
-	height: 30px;
-	display: flex;
-	justify-content: flex-start;
+  margin-top: 20px;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .details__social-network a img {
-	width: 30px;
-	height: inherit;
-	margin-right: 7px;
+  width: 30px;
+  height: inherit;
+  margin-right: 7px;
 }
 
 .hero__details {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero .hero__details .details__btns {
-	margin-top: 30px;
-	display: flex;
+  margin-top: 30px;
+  display: flex;
 }
 
 .details__btns .details__btns--resume {
-	padding: 12px 25px;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-weight: 600;
-	font-size: 12px;
-	background-color: #9be564;
-	border-radius: 30px;
-	color: #2b4162;
-	cursor: pointer;
+  padding: 12px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  background-color: #9be564;
+  border-radius: 30px;
+  color: #2b4162;
+  cursor: pointer;
 }
 
 /* ---------------------------------------------------------- .hero__image-container <- */
 
 .hero .hero__perfil {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .hero__perfil--image-container {
-	width: 250px;
-	height: 250px;
-	border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
 }
 
 .hero__perfil--image-container img {
-	width: inherit;
-	object-fit: cover;
-	border-radius: inherit;
-	cursor: pointer;
+  width: inherit;
+  object-fit: cover;
+  border-radius: inherit;
+  cursor: pointer;
 }
