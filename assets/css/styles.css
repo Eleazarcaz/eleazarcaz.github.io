@@ -1,4 +1,5 @@
 :root {
+  --color-light: #dce1de;
   --color-dark: #1f2421;
   --color-primary: #9cc5a1;
 }
@@ -55,4 +56,30 @@ body {
   outline: none;
   color: var(--color-primary);
   font-size: 2.5rem;
+}
+
+.main {
+  width: 100%;
+  padding: 3rem 5rem;
+}
+
+.main .main__titles {
+  width: inherit;
+}
+
+.titles {
+  width: 100%;
+}
+
+.titles .titles__slogan {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: var(--color-light);
+}
+
+.titles .titles__job {
+  margin-top: 1.8rem;
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: var(--color-primary);
 }
