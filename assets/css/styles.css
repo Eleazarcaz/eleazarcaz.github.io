@@ -1,7 +1,8 @@
 :root {
   --color-light: #dce1de;
   --color-dark: #1f2421;
-  --color-primary: #9cc5a1;
+  --color-primary: #49a078;
+  --color-primary-light: #9cc5a1;
 }
 
 * {
@@ -54,7 +55,7 @@ body {
   background: none;
   border: none;
   outline: none;
-  color: var(--color-primary);
+  color: var(--color-primary-light);
   font-size: 2.5rem;
 }
 
@@ -81,7 +82,7 @@ body {
   margin-top: 1.8rem;
   font-size: 1.8rem;
   font-weight: normal;
-  color: var(--color-primary);
+  color: var(--color-primary-light);
 }
 
 .nav-bottom {
@@ -126,4 +127,88 @@ body {
 .nav-bottom span {
   font-size: 1rem;
   font-weight: normal;
+}
+
+.section__top-bar {
+  height: 3rem;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--color-light);
+}
+.view-more {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.carrousel {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(5, 1fr);
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.carrousel .carrousel__item {
+  width: 22rem;
+  height: 25rem;
+  position: relative;
+  border-radius: 0.5rem;
+  background: rgba(31, 36, 33, 0.8);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.carrousel .carrousel__item-img {
+  width: inherit;
+  height: inherit;
+}
+
+.carrousel__item-img img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.carrousel__item .carrousel__item-info {
+  width: 100%;
+  height: 8rem;
+  padding: 1.3rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.carrousel__item .carrousel__item-info::before {
+  content: '';
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  background: rgba(220, 225, 222, 0.5);
+  backdrop-filter: blur(5rem);
+}
+
+.carrousel__item .carrousel__item-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--color-dark);
+}
+
+.carrousel__item .carrousel__item-description {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: var(--color-dark);
 }
