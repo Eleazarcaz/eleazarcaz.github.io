@@ -1,0 +1,47 @@
+:root {
+  --color-dark: #1f2421;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-dark);
+}
+
+.bg-image {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  filter: blur(15rem);
+  background-image: url('https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.header {
+  width: 100vw;
+  height: 6.3rem;
+}
+
+.header .header__container {
+  width: inherit;
+  height: inherit;
+  padding: 0 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
