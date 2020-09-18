@@ -83,3 +83,47 @@ body {
   font-weight: normal;
   color: var(--color-primary);
 }
+
+.nav-bottom {
+  width: inherit;
+  height: 5.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--color-dark);
+}
+
+.nav-bottom ul {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: var(--color-light);
+}
+
+.nav-bottom ul li {
+  width: 33.3%;
+  height: inherit;
+}
+
+.nav-bottom ul li a {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+.nav-bottom i {
+  font-size: 2rem;
+}
+
+.nav-bottom span {
+  font-size: 1rem;
+  font-weight: normal;
+}
