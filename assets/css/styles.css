@@ -2,7 +2,7 @@
   --color-light: #dce1de;
   --color-dark: #1f2421;
   --color-primary: #49a078;
-  --color-primary-light: #9cc5a1;
+  --color-primary-light: #B3FFAB;
 }
 
 * {
@@ -22,19 +22,6 @@ body {
   background-color: var(--color-dark);
 }
 
-.bg-image {
-  width: inherit;
-  height: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -100;
-  filter: blur(15rem);
-  background-image: url('https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  background-size: cover;
-  opacity: 0.2;
-}
-
 .header {
   width: 100vw;
   height: 6.3rem;
@@ -49,13 +36,14 @@ body {
   align-items: center;
 }
 
+
 .header .header__btn-menu {
   width: 3rem;
   height: inherit;
   background: none;
   border: none;
   outline: none;
-  color: var(--color-primary-light);
+  color: var(--color-primary);
   font-size: 2.5rem;
 }
 
@@ -78,6 +66,19 @@ body {
 
 .titles {
   width: 100%;
+  max-width: 40rem;
+  position: relative;
+}
+
+.titles::after {
+  content: "";
+  width: 2rem;
+  height: 6rem;
+  position: absolute;
+  top: .7rem;
+  left: -4rem;
+  background-image: url("../img/bars.svg");
+  background-repeat: no-repeat; 
 }
 
 .titles .titles__slogan {
@@ -157,6 +158,7 @@ body {
 }
 
 .carrousel {
+  padding: 1rem;
   display: grid;
   gap: 2.5rem;
   grid-template-columns: repeat(5, 1fr);
@@ -168,54 +170,40 @@ body {
   width: 22rem;
   height: 25rem;
   position: relative;
-  border-radius: 0.5rem;
   background: rgba(31, 36, 33, 0.8);
-  border-radius: 0.5rem;
-  overflow: hidden;
+  border: 2px solid var(--color-primary);
+  cursor: pointer;
 }
 
 .carrousel .carrousel__item-img {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
 }
 
 .carrousel__item-img img {
   width: inherit;
   height: inherit;
   object-fit: cover;
+  
 }
 
 .carrousel__item .carrousel__item-info {
   width: 100%;
-  height: 8rem;
-  padding: 1.3rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 1;
-}
-
-.carrousel__item .carrousel__item-info::before {
-  content: '';
-  width: inherit;
-  height: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -10;
-  background: rgba(220, 225, 222, 0.5);
-  backdrop-filter: blur(5rem);
+  background-color: var(--color-dark);
 }
 
 .carrousel__item .carrousel__item-name {
+  margin: auto 0;
   font-size: 1.8rem;
   font-weight: bold;
-  color: var(--color-dark);
+  color: var(--color-light);
 }
 
-.carrousel__item .carrousel__item-description {
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: normal;
-  color: var(--color-dark);
-}
