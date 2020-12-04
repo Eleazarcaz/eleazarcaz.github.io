@@ -12,6 +12,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/desktop.css"
+      media="screen and
+    (min-width: 1000px)"
+    />
     <title>Eleazar Carreon</title>
   </head>
   <body>
@@ -20,6 +26,13 @@
         <figure class="logo">
           <img src="./assets/img/ECA.png" alt="Eleazar Carreon Alvarez" />
         </figure>
+        <nav class="header__nav">
+          <ul>
+            <li><a href="#portfolio">PORTAFOLIO</a></li>
+            <li><a href="#about">SOBRE MI</a></li>
+            <li><a href="#contact">CONTACTO</a></li>
+          </ul>
+        </nav>
         <button class="header__btn-menu" type="button">
           <i class="fas fa-ellipsis-v"></i>
         </button>
@@ -49,9 +62,19 @@
     </nav>
     <main class="main">
       <section class="section">
-        <div class="titles">
-          <h1 class="titles__slogan">Hey, Soy Eleazar, Desarrollador Web.</h1>
-          <h4 class="titles__job">Frontend Developer</h4>
+        <div class="hero">
+          <div class="hero__details">
+            <h1 class="hero__slogan">Hey, Soy Eleazar, Desarrollador Web.</h1>
+            <h4 class="hero__job">Frontend Developer</h4>
+            <button class="btn" href="#">Resumen</button>
+          </div>
+          <figure class="fig-primary">
+            <img
+              src="https://scontent.frex1-1.fna.fbcdn.net/v/t1.0-9/118448393_3195263377255037_5788099622272073731_n.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=8BLmG5JUmQwAX9U4O_L&_nc_ht=scontent.frex1-1.fna&oh=62825e9989ebcb3fc4e9d0ab877084e6&oe=5FF1904D"
+              alt="Eleazar"
+              srcset=""
+            />
+          </figure>
         </div>
       </section>
 
@@ -59,28 +82,27 @@
         <div class="section__top-bar">
           <h5 class="section__name">Portafolio</h5>
           <a class="view-more" href="#"
-            ><i class="fas fa-long-arrow-alt-right"></i
-            ><span> Ver mas</span></a
+            ><i class="fas fa-long-arrow-alt-right"></i><span> Ver mas</span></a
           >
         </div>
         <div class="carrousel">
-          <a href="https://journal-app-eight.vercel.app/" class="carrousel__item">
+          <a
+            href="https://journal-app-eight.vercel.app/"
+            class="carrousel__item"
+          >
             <figure class="carrousel__item-img">
-              <img
-                src="./assets/img/journal.jpg"
-                alt="journal app"
-              />
+              <img src="./assets/img/journal.jpg" alt="journal app" />
             </figure>
             <div class="carrousel__item-info">
               <h6 class="carrousel__item-name">Journal App</h6>
             </div>
           </a>
-          <a href="https://burger-builder-flax.vercel.app/" class="carrousel__item">
+          <a
+            href="https://burger-builder-flax.vercel.app/"
+            class="carrousel__item"
+          >
             <figure class="carrousel__item-img">
-              <img
-                src="./assets/img/burger.png"
-                alt="burger builder"
-              />
+              <img src="./assets/img/burger.png" alt="burger builder" />
             </figure>
             <div class="carrousel__item-info">
               <h6 class="carrousel__item-name">Burger Builder</h6>
@@ -89,24 +111,33 @@
         </div>
       </section>
       <div class="container-section">
-      <section class="section">
-        <div class="container">
-        <h2 id="about" class="title">Sobre mí</h2>
-        <p class="text">
-Soy Eleazar de Tamaulipas, México. Desarrollador Frontend, con un buen ojo para el diseño. Autodidacta y con una enorme curiosidad por aprender cosas nuevas. Me gusta diseñar, participar en proyectos y sobre todo crear experiencias en mis trabajos.
-        </p>
-        </container>
-      </section>
-      <section class="section">
-        <div class="container">
-          <h2 id="contact" class="title">Contacto</h2>
-          <div class="container-icons">
-            <a href="https://www.linkedin.com/in/eleazarcaz/"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.twitter.com/eleazarcaz/"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.github.com/Eleazarcaz/"><i class="fab fa-github"></i></a>
+        <section class="section">
+          <div class="container">
+            <h2 id="about" class="title">Sobre mí</h2>
+            <p class="text">
+              Soy Eleazar de Tamaulipas, México. Desarrollador Frontend, con un
+              buen ojo para el diseño. Autodidacta y con una enorme curiosidad
+              por aprender cosas nuevas. Me gusta diseñar, participar en
+              proyectos y sobre todo crear experiencias en mis trabajos.
+            </p>
           </div>
-        </div>
-      </section>
+        </section>
+        <section class="section">
+          <div class="container">
+            <h2 id="contact" class="title">Contacto</h2>
+            <div class="container-icons">
+              <a href="https://www.linkedin.com/in/eleazarcaz/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="https://www.twitter.com/eleazarcaz/"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.github.com/Eleazarcaz/"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   </body>
